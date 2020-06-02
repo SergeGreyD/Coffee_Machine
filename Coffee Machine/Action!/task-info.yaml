@@ -281,6 +281,35 @@ files:
     if __name__ == '__main__':
         CoffeeMachineTest('machine.coffee_machine').run_tests()
   learner_created: false
+- name: machine/coffee_machine.py
+  visible: true
+  text: "# Write your code here\n# First, read the numbers of coffee drinks from the\
+    \ input\n# number_coffee_cups = int(input('Write how many cups of coffee you will\
+    \ need:>'))\n\n# inputs\nwater_in_coffee_machine = input('Write how many ml of\
+    \ water the coffee machine has: ')\nmilk_in_coffee_machine = input('Write how\
+    \ many ml of milk the coffee machine has: ')\nbeans_in_coffee_machine = input('Write\
+    \ how many g of beans the coffee machine has: ')\nnumber_coffee_cups = input('Write\
+    \ how many cups of coffee you will need: ')\n\"\"\"\nFigure out how much of each\
+    \ ingredient the machine \nwill need. \nNote that one cup of coffee made \non\
+    \ this coffee machine contains 200 ml of water, \n50 ml of milk, and 15 g of coffee\
+    \ beans.\n\"\"\"\n# coffee amount\ncups_amount_water = int(water_in_coffee_machine)\
+    \ / 200\ncups_amount_milk = int(milk_in_coffee_machine) / 50\ncups_amount_beans\
+    \ = int(beans_in_coffee_machine) / 15\ncups_amount_coffee = [cups_amount_water,\
+    \ cups_amount_milk, cups_amount_beans]\n# minimum amount of cups of coffee\ncups_of_coffee\
+    \ = int(min(cups_amount_coffee))\nwater = 200 * number_coffee_cups\nmilk = 50\
+    \ * number_coffee_cups\nbeans = 15 * number_coffee_cups\n# Output the required\
+    \ ingredient amounts back to the user.\n# print('For', number_coffee_cups, 'you\
+    \ will need:')\n# print(water, 'ml of water')\n# print(milk, 'ml of milk')\n#\
+    \ print(beans, 'g of coffee beans')\n# print('Starting to make a coffee')\n# print('Grinding\
+    \ coffee beans')\n# print('Boiling water')\n# print('Mixing boiled water with\
+    \ crushed coffee beans')\n# print('Pouring coffee into the cup')\n# print('Pouring\
+    \ some milk into the cup')\n# print('Coffee is ready!')\n# Output is amount of\
+    \ coffee ok\nif int(number_coffee_cups) == int(cups_of_coffee):\n    print(\"\
+    Yes. I can make that amount of coffee \")\nelif int(number_coffee_cups) > int(cups_of_coffee):\n\
+    \    print(\"No, I can make only\", int(cups_of_coffee), \"cups of coffee\")\n\
+    else:\n    print(\"Yes, I can make that amount of coffee( and even\", int(cups_of_coffee)\
+    \ - int(number_coffee_cups),\n          \"more than that)\")\n"
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/68/stages/369/implement
 status: Unchecked
 record: -1

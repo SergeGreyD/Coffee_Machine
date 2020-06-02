@@ -103,6 +103,21 @@ files:
     if __name__ == '__main__':
         CoffeeMachineTest('machine.coffee_machine').run_tests()
   learner_created: false
+- name: machine/coffee_machine.py
+  visible: true
+  text: "# Write your code here\n# First, read the numbers of coffee drinks from the\
+    \ input\nnumber_coffee_cups = int(input('Write how many cups of coffee you will\
+    \ need:>'))\n\"\"\"\nFigure out how much of each ingredient the machine \nwill\
+    \ need. \nNote that one cup of coffee made \non this coffee machine contains 200\
+    \ ml of water, \n50 ml of milk, and 15 g of coffee beans.\n\"\"\"\nwater = 200\
+    \ * number_coffee_cups\nmilk = 50 * number_coffee_cups\nbeans = 15 * number_coffee_cups\n\
+    # Output the required ingredient amounts back to the user.\nprint('For', number_coffee_cups,\
+    \ 'you will need:')\nprint(water, 'ml of water')\nprint(milk, 'ml of milk')\n\
+    print(beans, 'g of coffee beans')\n# print('Starting to make a coffee')\n# print('Grinding\
+    \ coffee beans')\n# print('Boiling water')\n# print('Mixing boiled water with\
+    \ crushed coffee beans')\n# print('Pouring coffee into the cup')\n# print('Pouring\
+    \ some milk into the cup')\n# print('Coffee is ready!')\n"
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/68/stages/368/implement
-status: Unchecked
-record: -1
+status: Solved
+record: 3
